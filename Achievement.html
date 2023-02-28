@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Portfolio</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#000066;" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="https://www.triosdevelopers.com/~B.Khadka/bhawani_blog/" target="_blank">MyBlog</a>
+                    </li>
+                    <li>
+                        <a href="Achievement.html">Achievements</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+
+
+                    <!-- /.droupdow
+
+
+                    <li>
+                        <a style="background-color:#000066;" href="#" class="dropdown-toggle" data-toggle="dropdown">Projecrs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="presentation.pdf" target="_blank">Case Study Online Bookstore App</a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a href="https://www.figma.com/proto/3udvq6R1ZOHbnDu47DTSvh/BookLover?node-id=63%3A594&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A166&show-proto-sidebar=1" target="_blank">Low-Fidelity Designs  </a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="shopify.html" target="_blank">Shopify Furniture App  </a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.trios.trivia&hl=en" target="_blank"> Trivia Android App  </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="https://www.triosdevelopers.com/~B.Khadka/Lighthouse1/Lighthouse1/cruise.html" target="_blank"> Lighthouse College Lab Project </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>   -->
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <p>
+        <h3 style="text-align:center;">
+            <b>
+
+                ACHIEVEMENTS!!
+            </b>
+        </h3>
+    </p>
+    <br />
+    <img src="certificates/diploma1.png" id="pic" style="display:none" />
+    <img src="certificates/transcript.png" id="pic2" style="display:none" />
+    <img src="certificates/google_ux_design_final.png" id="pic3" style="display:none" />
+    <img src="certificates/google_ux_fundamental.png" id="pic4" style="display:none" />
+    <p>
+        <img src="certificates/Azure.png" id="pic5" style="display:none" />
+       
+        <img src="certificates/Java.png" id="pic8" style="display:none" />
+        <img src="certificates/adt2.png" id="pic9" style="display:none" />
+        
+        
+        <img src="certificates/bootstrap.png" id="pic12" style="display:none" />
+    </p>
+    <canvas id="DemoCanvas" width="1350" height="1900"></canvas>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("DemoCanvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+                var img = document.getElementById("pic");
+                ctx.drawImage(img, 150, 20, 490, 490);
+                ctx.lineJoin = "bevel";
+                ctx.strokeStyle = "blue";
+                ctx.lineWidth = "20";
+                ctx.strokeRect(150, 20, 500, 500);
+
+                var img2 = document.getElementById("pic2");
+                ctx.drawImage(img2, 650, 510, 490, 490);
+                ctx.lineWidth = "20";
+                ctx.lineJoin = "bevel";
+                ctx.strokeStyle = "blue";
+                ctx.strokeRect(650, 510, 490, 490);
+
+
+                var img3 = document.getElementById("pic3");
+                ctx.drawImage(img3, 720, 30, 520, 450);
+                ctx.lineWidth = "15";
+                ctx.strokeStyle = "darkblue";
+                ctx.strokeRect(720, 30, 520, 450);
+                ctx.lineJoin = "bevel";
+
+                var img4 = document.getElementById("pic4");
+                ctx.drawImage(img4, 100, 580, 500, 400);
+                ctx.lineWidth = "15";
+                ctx.strokeStyle = "yellow";
+                ctx.strokeRect(100, 580, 500, 400);
+                ctx.lineJoin = "round";
+
+               
+                var img9 = document.getElementById("pic9");               
+                var img8 = document.getElementById("pic8");
+                var img5 = document.getElementById("pic5");
+                var img11 = document.getElementById("pic12");
+
+
+               
+                ctx.drawImage(img9, 650, 1100, 608, 610);
+
+                ctx.drawImage(img8, 200, 1290, 400, 250);
+                ctx.drawImage(img5, 200, 1030, 400, 250);
+              
+
+                ctx.drawImage(img11, 200, 1550, 400, 250);
+                
+
+                ctx.lineWidth = "5";
+                ctx.strokeStyle = "darkblue";
+                ctx.strokeRect(180, 1030, 1125, 772);
+                ctx.lineJoin = "round";
+            }
+        }
+    </script>
+
+</body>
+</html>
